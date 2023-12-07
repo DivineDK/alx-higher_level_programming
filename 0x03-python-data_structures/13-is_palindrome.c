@@ -3,12 +3,11 @@
 #include <stdio.h>
 
 /**
- * add_nodeint - Adds a new node with an integer value at the beginning of a listint_t linked list
- * @head: Pointer to a pointer pointing to the head of the list
- * @n: Integer value to be added to the linked list
- *
- * Return: Address of the newly added element (new node) or NULL if memory allocation failed
- */
+*add_nodeint - adds a new node at the beginning of a listint_t list
+*@head: head of listint_t
+*@n: int to add in listint_t list
+*Return: address of the new element, or NULL if it failed
+*/
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
@@ -22,11 +21,10 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	return (new);
 }
 /**
- * is_palindrome - Checks if a listint_t singly linked list is a palindrome
- * @head: Pointer to the head of the listint_t linked list
- *
- * Return: 1 if the list is a palindrome, 0 otherwise
- */
+*is_palindrome - identify if a syngle linked list is palindrome
+*@head: head of listint_t
+*Return: 1 if it is palindrome else 0
+*/
 int is_palindrome(listint_t **head)
 {
 	listint_t *head2 = *head;
@@ -53,5 +51,4 @@ int is_palindrome(listint_t **head)
 	free_listint(aux);
 	return (1);
 }
-
 

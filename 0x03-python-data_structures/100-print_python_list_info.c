@@ -2,13 +2,9 @@
 #include <stdio.h>
 #include <Python.h>
 /**
- * print_python_list_info - Prints basic information about Python lists
- * @p: Pointer to a Python list object
- *
- * This function retrieves and prints information about a Python list:
- * - Size of the list
- * - Allocated memory for the list
- * - Types of elements within the list
+ * print_python_list_info -  function that prints some basic
+ *							info about Python lists
+ * @p: python list
  */
 void print_python_list_info(PyObject *p)
 {
