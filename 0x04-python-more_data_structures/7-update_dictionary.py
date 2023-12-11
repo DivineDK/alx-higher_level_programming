@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-
-def complex_delete(a_dictionary, value):
-    for key in list(a_dictionary):
-        if a_dictionary[key] == value:
-            del a_dictionary[key]
-    return a_dictionary
+def update_dictionary(my_dict, key, value):
+    my_dict[key] = value
+    return my_dict
